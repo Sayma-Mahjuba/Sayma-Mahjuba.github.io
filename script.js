@@ -50,11 +50,11 @@
       }
 
       copyBtn.classList.add("copied");
-      if (labelSpan) labelSpan.textContent = "Copied";
+      if (labelSpan) labelSpan.textContent = "copied";
       clearTimeout(copyTimer);
       copyTimer = setTimeout(() => {
         copyBtn.classList.remove("copied");
-        if (labelSpan) labelSpan.textContent = "Copy";
+        if (labelSpan) labelSpan.textContent = "copy";
       }, 2000);
     });
   }
