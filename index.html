@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayma Mahjuba — Academic Portfolio</title>
+  <meta
+    name="description"
+    content="Academic portfolio of Sayma Mahjuba, prospective Computer Science Ph.D. applicant researching Large Language Models for Software Testing, AI-driven Software Quality Assurance, and Software Engineering."
+  />
+  <meta name="author" content="Sayma Mahjuba" />
+
+  <!-- Social / LinkedIn Link Preview Metadata -->
+  <meta property="og:title" content="Sayma Mahjuba — Academic Portfolio" />
+  <meta
+    property="og:description"
+    content="Prospective CS Ph.D. Applicant · Large Language Models for Software Testing & AI-Driven Software Quality Assurance"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sayma-mahjuba.github.io/" />
+  <meta property="og:image" content="https://sayma-mahjuba.github.io/assets/profile.png" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem("sayma-portfolio-theme");
+      if (saved === "dark" || saved === "light") {
+        document.documentElement.setAttribute("data-theme", saved);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="page-shell">
+    <!-- Left Academic Profile Sidebar -->
+    <aside class="sidebar">
+      <div>
+        <div class="avatar-wrap">
+          <img src="assets/profile.png" alt="Portrait of Sayma Mahjuba" />
+        </div>
+        <h1 class="sidebar-name">Sayma Mahjuba</h1>
+        <p class="sidebar-role">Prospective CS Ph.D. Applicant<br />AI &amp; Software Engineering</p>
+        <p class="sidebar-loc">Ames, Iowa, USA</p>
+
+        <ul class="sidebar-nav" aria-label="Page sections">
+          <li><a href="#about">About</a></li>
+          <li><a href="#news">Updates</a></li>
+          <li><a href="#research">Research &amp; Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills &amp; Credentials</a></li>
+        </ul>
+
+        <ul class="sidebar-links" aria-label="External links">
+          <li>
+            <a href="mailto:saymamahjuba@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>saymamahjuba@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="cv.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span>Curriculum Vitae (CV)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Sayma-Mahjuba" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sayma-mahjuba/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-bottom">
+        <span>&copy; 2026 Sayma Mahjuba</span>
+        <button type="button" class="theme-btn" id="theme-toggle">Dark / Light</button>
+      </div>
+    </aside>
+
+    <!-- Right Academic Content -->
+    <main class="content">
+      <section class="section" id="about">
+        <div class="phd-callout">
+          <strong>Ph.D. Applications:</strong> Actively exploring Computer Science Ph.D. opportunities for <strong>Fall 2027</strong> in AI-driven Software Engineering and LLM-based Software Testing.
+        </div>
+
+        <h2>About</h2>
+        <p>
+          I am a Computer Science &amp; Engineering graduate from
+          <strong>Chittagong University of Engineering and Technology (CUET)</strong>, currently
+          residing in Ames, Iowa, USA. Prior to relocating, I spent three years as a Software
+          Quality Assurance (SQA) Engineer at <strong>Pathao Ltd.</strong>, following an
+          internship at <strong>a1qa</strong> and an industrial attachment at
+          <strong>Brain Station 23</strong>.
+        </p>
+        <p>
+          My industry experience testing production web, mobile, and API systems motivates my
+          research interest at the intersection of <strong>Artificial Intelligence and Software
+          Engineering</strong>. I am particularly interested in how <strong>Large Language Models
+          (LLMs)</strong> can improve software testing, automated test case generation, and
+          intelligent software quality assurance.
+        </p>
+
+        <ul class="interests-inline" aria-label="Research interests">
+          <li>LLMs for Software Testing</li>
+          <li>AI-Driven SQA</li>
+          <li>Automated Software Testing</li>
+          <li>LLM-Based Test Case Generation</li>
+          <li>Software Engineering &amp; AI</li>
+        </ul>
+      </section>
+
+      <section class="section" id="news">
+        <h2>Recent Updates</h2>
+        <div class="news-table">
+          <div class="news-row">
+            <span class="news-date">Fall 2026</span>
+            <span>Exploring Computer Science Ph.D. opportunities for <strong>Fall 2027</strong> admission.</span>
+          </div>
+          <div class="news-row">
+            <span class="news-date">2026</span>
+            <span>Completed <em>Attention in Transformers: Concepts and Code in PyTorch</em> (DeepLearning.AI) and continuing study in LLMs, NLP, and Agentic AI.</span>
+          </div>
+          <div class="news-row">
+            <span class="news-date">2026</span>
+            <span>Investigating test automation (Playwright, Selenium) and LLM-assisted test case generation workflows.</span>
+          </div>
+          <div class="news-row">
+            <span class="news-date">Aug 2026</span>
+            <span>Concluded three years as SQA Engineer at Pathao Ltd. and moved to Ames, Iowa.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="research">
+        <h2>Research, Thesis &amp; Projects</h2>
+
+        <article class="item">
+          <div class="item-head">
+            <h3 class="item-title">
+              A Hybridization Approach for News Article Recommendations Utilizing NLP and Three Machine Learning Algorithms
+            </h3>
+            <span class="item-date">2022</span>
+          </div>
+          <div class="item-meta">
+            <strong>Sayma Mahjuba</strong> &middot; Undergraduate Thesis, Dept. of CSE, CUET &middot; Supervised by <em>Shafiul Alam Forhad</em>
+          </div>
+          <p>
+            Proposed and evaluated a hybrid news recommendation framework combining Natural
+            Language Processing (NLP) representations with three machine learning algorithms to
+            improve article recommendation quality.
+          </p>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3 class="item-title">Test Automation &amp; LLM-Based Software Testing Exploration</h3>
+            <span class="item-date">Ongoing</span>
+          </div>
+          <div class="item-meta">Independent Research Exploration &middot; Playwright, Selenium, LLMs</div>
+          <p>
+            Exploring browser test automation frameworks alongside Large Language Model techniques
+            for automated test case generation and intelligent software quality assurance.
+          </p>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3 class="item-title">Automated API &amp; Performance Testing Suites</h3>
+            <span class="item-date">SQA Projects</span>
+          </div>
+          <div class="item-meta">
+            Postman, Newman, Apache JMeter &middot;
+            <a href="https://github.com/Sayma-Mahjuba" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+          <p>
+            Built automated API testing workflows for user transactions using Postman and Newman,
+            as well as automated API and performance/load test plans using Apache JMeter.
+          </p>
+        </article>
+
+        <p class="muted-note">
+          I do not yet have peer-reviewed publications and welcome opportunities to collaborate
+          with faculty and research groups in Software Engineering and AI.
+        </p>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <article class="item">
+          <div class="item-head">
+            <h3 class="item-title">B.Sc. in Computer Science &amp; Engineering</h3>
+            <span class="item-date">2017 – 2022</span>
+          </div>
+          <div class="item-sub">Chittagong University of Engineering and Technology (CUET), Bangladesh</div>
+          <p>
+            <strong>CGPA:</strong> 3.41 / 4.00<br />
+            <strong>Thesis:</strong> <em>A Hybridization Approach for News Article Recommendations Utilizing NLP and Three Machine Learning Algorithms</em> (Advisor: Shafiul Alam Forhad)<br />
+            <strong>Relevant Coursework:</strong> Software Engineering, Data Structures &amp; Algorithms, Artificial Intelligence, Machine Learning, Database Systems, Computer Networks
+          </p>
+        </article>
+      </section>
+
+      <section class="section" id="experience">
+        <h2>Experience</h2>
+
+        <article class="item">
+          <div class="item-head">
+            <h3 class="item-title">Software Quality Assurance (SQA) Engineer</h3>
+            <span class="item-date">Sep 2023 – Aug 2026</span>
+          </div>
+          <div class="item-sub">Pathao Ltd. &middot; Dhaka, Bangladesh</div>
+          <ul class="clean-list">
+            <li>Conducted functional, regression, and exploratory testing across web and mobile applications to uphold software reliability.</li>
+            <li>Validated end-to-end business workflows across multiple services, identifying defects and verifying fixes before release.</li>
+            <li>Collaborated with engineers and product managers throughout the SDLC across API testing, UAT, and release validation.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3 class="item-title">Functional Testing Engineer (Intern)</h3>
+            <span class="item-date">Jun 2023 – Aug 2023</span>
+          </div>
+          <div class="item-sub">a1qa &middot; Remote</div>
+          <ul class="clean-list">
+            <li>Performed functional testing for web and desktop applications.</li>
+            <li>Authored test documentation, test plans, and quality reports, and tracked software defects across releases.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3 class="item-title">Industrial Attachment</h3>
+            <span class="item-date">Jan 2022 – Feb 2022</span>
+          </div>
+          <div class="item-sub">Brain Station 23 &middot; Dhaka, Bangladesh</div>
+          <ul class="clean-list">
+            <li>Built an Android application with user authentication (login/registration) and dynamic views backed by RESTful APIs.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section" id="skills">
+        <h2>Technical Skills &amp; Certifications</h2>
+        <div class="skill-line">
+          <span class="skill-k">Programming &amp; Web</span>
+          <span class="skill-v">Java, Python, C, SQL, JavaScript, HTML, CSS, Bootstrap</span>
+        </div>
+        <div class="skill-line">
+          <span class="skill-k">Software Testing &amp; QA</span>
+          <span class="skill-v">Functional, GUI, Regression, Exploratory, UAT, API Testing, Test Planning</span>
+        </div>
+        <div class="skill-line">
+          <span class="skill-k">Automation &amp; Load</span>
+          <span class="skill-v">Selenium, Playwright <em>(developing proficiency)</em>, Apache JMeter, Postman, Newman</span>
+        </div>
+        <div class="skill-line">
+          <span class="skill-k">AI &amp; Machine Learning</span>
+          <span class="skill-v">Machine Learning, NLP, Transformers, Large Language Models (LLMs)</span>
+        </div>
+        <div class="skill-line">
+          <span class="skill-k">Tools &amp; Platforms</span>
+          <span class="skill-v">Git, GitHub, Jira, IntelliJ IDEA</span>
+        </div>
+
+        <ul class="clean-list" style="margin-top: 1.25rem;">
+          <li><strong>Attention in Transformers: Concepts and Code in PyTorch</strong> — DeepLearning.AI</li>
+          <li><strong>Specialize in QA Manual Testing with Live Project + Agile + Jira</strong> — Udemy</li>
+          <li><strong>Foundations in Digital Forensics with Magnet Axiom</strong> — Contessa Solutions and Consultants Ltd.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
