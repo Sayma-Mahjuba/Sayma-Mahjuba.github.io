@@ -6,7 +6,7 @@
   <title>Sayma Mahjuba — Academic Portfolio</title>
   <meta
     name="description"
-    content="Academic portfolio of Sayma Mahjuba, prospective Computer Science Ph.D. applicant researching Large Language Models for Software Testing, AI-driven Software Quality Assurance, and Software Engineering."
+    content="Academic portfolio of Sayma Mahjuba, prospective Computer Science Ph.D. applicant researching Large Language Models for Software Testing, Automated Test Generation, and AI-Driven Software Quality Assurance."
   />
   <meta name="author" content="Sayma Mahjuba" />
 
@@ -18,7 +18,7 @@
   />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sayma-mahjuba.github.io/" />
-  <meta property="og:image" content="https://sayma-mahjuba.github.io/assets/profile.png" />
+  <meta property="og:image" content="https://sayma-mahjuba.github.io/profile.png" />
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,21 +42,16 @@
     <!-- Left Academic Profile Sidebar -->
     <aside class="sidebar">
       <div>
-        <div class="avatar-wrap">
-          <img src="assets/profile.png" alt="Portrait of Sayma Mahjuba" />
+        <div class="profile-identity">
+          <div class="avatar-wrap">
+            <img src="profile.png" alt="Portrait of Sayma Mahjuba" />
+          </div>
+          <div>
+            <h1 class="sidebar-name">Sayma Mahjuba</h1>
+            <p class="sidebar-role">Prospective CS Ph.D. Applicant<br />AI &amp; Software Engineering</p>
+            <p class="sidebar-loc">Ames, Iowa, USA</p>
+          </div>
         </div>
-        <h1 class="sidebar-name">Sayma Mahjuba</h1>
-        <p class="sidebar-role">Prospective CS Ph.D. Applicant<br />AI &amp; Software Engineering</p>
-        <p class="sidebar-loc">Ames, Iowa, USA</p>
-
-        <ul class="sidebar-nav" aria-label="Page sections">
-          <li><a href="#about">About</a></li>
-          <li><a href="#news">Updates</a></li>
-          <li><a href="#research">Research &amp; Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills &amp; Credentials</a></li>
-        </ul>
 
         <ul class="sidebar-links" aria-label="External links">
           <li>
@@ -64,6 +59,17 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               <span>saymamahjuba@gmail.com</span>
             </a>
+            <button
+              type="button"
+              class="copy-email-btn"
+              id="copy-email-btn"
+              data-email="saymamahjuba@gmail.com"
+              aria-label="Copy email address"
+              title="Copy email address"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>Copy</span>
+            </button>
           </li>
           <li>
             <a href="cv.html">
@@ -84,11 +90,44 @@
             </a>
           </li>
         </ul>
+
+        <ul class="sidebar-nav" aria-label="Page sections">
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#news">Updates</a></li>
+          <li><a href="#research">Research &amp; Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills &amp; Study</a></li>
+        </ul>
       </div>
 
       <div class="sidebar-bottom">
-        <span>&copy; 2026 Sayma Mahjuba</span>
-        <button type="button" class="theme-btn" id="theme-toggle">Dark / Light</button>
+        <div class="sidebar-meta-foot">
+          <span>&copy; 2026 Sayma Mahjuba</span>
+          <span class="updated-stamp">Updated Nov 2026</span>
+        </div>
+        <button
+          type="button"
+          class="theme-icon-btn"
+          id="theme-toggle"
+          aria-label="Switch to dark mode"
+          title="Switch to dark mode"
+        >
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
       </div>
     </aside>
 
@@ -96,32 +135,40 @@
     <main class="content">
       <section class="section" id="about">
         <div class="phd-callout">
-          <strong>Ph.D. Applications:</strong> Actively exploring Computer Science Ph.D. opportunities for <strong>Fall 2027</strong> in AI-driven Software Engineering and LLM-based Software Testing.
+          <strong>Ph.D. Applications (Fall 2027):</strong> Exploring doctoral research opportunities in Computer Science focusing on <strong>Large Language Models for Software Testing</strong> and <strong>AI-Driven Software Engineering</strong>.
         </div>
 
-        <h2>About</h2>
+        <h2>About &amp; Research Vision</h2>
         <p>
           I am a Computer Science &amp; Engineering graduate from
           <strong>Chittagong University of Engineering and Technology (CUET)</strong>, currently
-          residing in Ames, Iowa, USA. Prior to relocating, I spent three years as a Software
-          Quality Assurance (SQA) Engineer at <strong>Pathao Ltd.</strong>, following an
-          internship at <strong>a1qa</strong> and an industrial attachment at
+          residing in Ames, Iowa, USA. Before relocating, I worked for three years as a Software
+          Quality Assurance (SQA) Engineer at <strong>Pathao Ltd.</strong>—following a functional
+          testing internship at <strong>a1qa</strong> and an industrial attachment at
           <strong>Brain Station 23</strong>.
         </p>
         <p>
-          My industry experience testing production web, mobile, and API systems motivates my
-          research interest at the intersection of <strong>Artificial Intelligence and Software
-          Engineering</strong>. I am particularly interested in how <strong>Large Language Models
-          (LLMs)</strong> can improve software testing, automated test case generation, and
-          intelligent software quality assurance.
+          Testing multi-service web, mobile, and API workflows in production showed me firsthand
+          how brittle manual regression suites and complex edge cases slow down reliable software
+          delivery. That engineering experience directly motivates my doctoral research goal:
+          investigating how <strong>Large Language Models (LLMs)</strong> and AI techniques can
+          automate test case generation, strengthen test reliability, and bring scalable
+          intelligence to software quality assurance.
         </p>
 
-        <ul class="interests-inline" aria-label="Research interests">
-          <li>LLMs for Software Testing</li>
-          <li>AI-Driven SQA</li>
-          <li>Automated Software Testing</li>
-          <li>LLM-Based Test Case Generation</li>
-          <li>Software Engineering &amp; AI</li>
+        <ul class="research-themes" aria-label="Core research themes">
+          <li>
+            <span class="theme-marker">01</span>
+            <span><strong>LLM-Based Test Case Generation</strong> — automating functional, API, and edge-case test design with verifiable assertions.</span>
+          </li>
+          <li>
+            <span class="theme-marker">02</span>
+            <span><strong>AI-Driven Software Quality Assurance</strong> — making regression, exploratory, and end-to-end testing more resilient and scalable.</span>
+          </li>
+          <li>
+            <span class="theme-marker">03</span>
+            <span><strong>Software Engineering &amp; AI</strong> — bridging practical testing challenges from production systems with rigorous empirical SE research.</span>
+          </li>
         </ul>
       </section>
 
@@ -130,7 +177,7 @@
         <div class="news-table">
           <div class="news-row">
             <span class="news-date">Fall 2026</span>
-            <span>Exploring Computer Science Ph.D. opportunities for <strong>Fall 2027</strong> admission.</span>
+            <span>Exploring Computer Science Ph.D. opportunities for <strong>Fall 2027</strong> in AI &amp; Software Engineering.</span>
           </div>
           <div class="news-row">
             <span class="news-date">2026</span>
@@ -138,11 +185,11 @@
           </div>
           <div class="news-row">
             <span class="news-date">2026</span>
-            <span>Investigating test automation (Playwright, Selenium) and LLM-assisted test case generation workflows.</span>
+            <span>Building hands-on familiarity with Playwright, Selenium, and LLM-assisted automated test generation workflows.</span>
           </div>
           <div class="news-row">
             <span class="news-date">Aug 2026</span>
-            <span>Concluded three years as SQA Engineer at Pathao Ltd. and moved to Ames, Iowa.</span>
+            <span>Concluded three years as SQA Engineer at Pathao Ltd. and relocated to Ames, Iowa, USA.</span>
           </div>
         </div>
       </section>
@@ -150,26 +197,46 @@
       <section class="section" id="research">
         <h2>Research, Thesis &amp; Projects</h2>
 
-        <article class="item">
+        <article class="item featured-research">
+          <span class="item-kicker">Undergraduate Thesis · 2022</span>
           <div class="item-head">
             <h3 class="item-title">
               A Hybridization Approach for News Article Recommendations Utilizing NLP and Three Machine Learning Algorithms
             </h3>
-            <span class="item-date">2022</span>
           </div>
           <div class="item-meta">
-            <strong>Sayma Mahjuba</strong> &middot; Undergraduate Thesis, Dept. of CSE, CUET &middot; Supervised by <em>Shafiul Alam Forhad</em>
+            <strong>Sayma Mahjuba</strong> &middot; Dept. of CSE, CUET &middot; Advisor: <em>Shafiul Alam Forhad</em>
           </div>
           <p>
-            Proposed and evaluated a hybrid news recommendation framework combining Natural
-            Language Processing (NLP) representations with three machine learning algorithms to
-            improve article recommendation quality.
+            Proposed and evaluated a hybrid news article recommendation approach combining Natural
+            Language Processing (NLP) text representations with three machine learning algorithms
+            to improve recommendation relevance.
           </p>
+
+          <div class="abstract-drawer-inline">
+            <a class="pill-link" href="https://github.com/Sayma-Mahjuba" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <details class="abstract-drawer">
+              <summary>Summary</summary>
+              <div class="abstract-body">
+                <p>
+                  <strong>Motivation:</strong> Single-model recommender pipelines often struggle
+                  with cold-start news items and shifting reader preferences across heterogeneous
+                  text topics.
+                </p>
+                <p>
+                  <strong>Approach:</strong> Combined NLP-based feature extraction from news
+                  articles with a hybridized pipeline integrating three machine learning algorithms
+                  to generate more relevant article recommendations, evaluated as my B.Sc.
+                  undergraduate thesis at CUET.
+                </p>
+              </div>
+            </details>
+          </div>
         </article>
 
         <article class="item">
           <div class="item-head">
-            <h3 class="item-title">Test Automation &amp; LLM-Based Software Testing Exploration</h3>
+            <h3 class="item-title">Test Automation &amp; LLM-Assisted Software Testing Exploration</h3>
             <span class="item-date">Ongoing</span>
           </div>
           <div class="item-meta">Independent Research Exploration &middot; Playwright, Selenium, LLMs</div>
@@ -177,6 +244,20 @@
             Exploring browser test automation frameworks alongside Large Language Model techniques
             for automated test case generation and intelligent software quality assurance.
           </p>
+
+          <div class="abstract-drawer-inline">
+            <a class="pill-link" href="https://github.com/Sayma-Mahjuba" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <details class="abstract-drawer">
+              <summary>Focus Areas</summary>
+              <div class="abstract-body">
+                <p>
+                  Studying how modern LLMs and Transformer architectures can generate maintainable
+                  end-to-end and API test suites, complementing hands-on automation work in
+                  Playwright and Selenium.
+                </p>
+              </div>
+            </details>
+          </div>
         </article>
 
         <article class="item">
@@ -184,20 +265,23 @@
             <h3 class="item-title">Automated API &amp; Performance Testing Suites</h3>
             <span class="item-date">SQA Projects</span>
           </div>
-          <div class="item-meta">
-            Postman, Newman, Apache JMeter &middot;
-            <a href="https://github.com/Sayma-Mahjuba" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </div>
+          <div class="item-meta">Postman, Newman, Apache JMeter</div>
           <p>
-            Built automated API testing workflows for user transactions using Postman and Newman,
-            as well as automated API and performance/load test plans using Apache JMeter.
+            Developed automated API test suites for user transaction workflows using Postman and
+            Newman, alongside Apache JMeter test plans for API automation and load/performance
+            evaluation.
           </p>
+
+          <div class="artifact-row">
+            <a class="pill-link" href="https://github.com/Sayma-Mahjuba" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
         </article>
 
-        <p class="muted-note">
-          I do not yet have peer-reviewed publications and welcome opportunities to collaborate
-          with faculty and research groups in Software Engineering and AI.
-        </p>
+        <div class="forward-note">
+          <strong>Current Focus:</strong> Actively building open-source experiments in LLM-assisted
+          software testing and seeking Ph.D. advising and research collaborations for
+          <strong>Fall 2027</strong>.
+        </div>
       </section>
 
       <section class="section" id="education">
@@ -210,7 +294,7 @@
           <div class="item-sub">Chittagong University of Engineering and Technology (CUET), Bangladesh</div>
           <p>
             <strong>CGPA:</strong> 3.41 / 4.00<br />
-            <strong>Thesis:</strong> <em>A Hybridization Approach for News Article Recommendations Utilizing NLP and Three Machine Learning Algorithms</em> (Advisor: Shafiul Alam Forhad)<br />
+            <strong>Undergraduate Thesis:</strong> <em>A Hybridization Approach for News Article Recommendations Utilizing NLP and Three Machine Learning Algorithms</em> (Advisor: Shafiul Alam Forhad)<br />
             <strong>Relevant Coursework:</strong> Software Engineering, Data Structures &amp; Algorithms, Artificial Intelligence, Machine Learning, Database Systems, Computer Networks
           </p>
         </article>
@@ -226,9 +310,9 @@
           </div>
           <div class="item-sub">Pathao Ltd. &middot; Dhaka, Bangladesh</div>
           <ul class="clean-list">
-            <li>Conducted functional, regression, and exploratory testing across web and mobile applications to uphold software reliability.</li>
-            <li>Validated end-to-end business workflows across multiple services, identifying defects and verifying fixes before release.</li>
-            <li>Collaborated with engineers and product managers throughout the SDLC across API testing, UAT, and release validation.</li>
+            <li>Conducted functional, regression, and exploratory testing of production web and mobile applications to ensure software quality and reliability.</li>
+            <li>Validated end-to-end business workflows across multiple services, identifying defects early and verifying fixes prior to production release.</li>
+            <li>Collaborated with engineers, product managers, and cross-functional teams across the SDLC on API testing, UAT, and release validation.</li>
           </ul>
         </article>
 
@@ -239,8 +323,8 @@
           </div>
           <div class="item-sub">a1qa &middot; Remote</div>
           <ul class="clean-list">
-            <li>Performed functional testing for web and desktop applications.</li>
-            <li>Authored test documentation, test plans, and quality reports, and tracked software defects across releases.</li>
+            <li>Executed functional testing across web and desktop applications.</li>
+            <li>Authored structured test documentation, test plans, and quality reports, tracking software defects across release cycles.</li>
           </ul>
         </article>
 
@@ -257,22 +341,22 @@
       </section>
 
       <section class="section" id="skills">
-        <h2>Technical Skills &amp; Certifications</h2>
+        <h2>Technical Skills &amp; Continuing Study</h2>
         <div class="skill-line">
-          <span class="skill-k">Programming &amp; Web</span>
-          <span class="skill-v">Java, Python, C, SQL, JavaScript, HTML, CSS, Bootstrap</span>
+          <span class="skill-k">AI &amp; Machine Learning</span>
+          <span class="skill-v">Machine Learning, Natural Language Processing (NLP), Transformers, Large Language Models (LLMs)</span>
         </div>
         <div class="skill-line">
           <span class="skill-k">Software Testing &amp; QA</span>
-          <span class="skill-v">Functional, GUI, Regression, Exploratory, UAT, API Testing, Test Planning</span>
+          <span class="skill-v">Functional, GUI, Regression, Exploratory, UAT, API Testing, Test Planning &amp; Defect Tracking</span>
         </div>
         <div class="skill-line">
           <span class="skill-k">Automation &amp; Load</span>
           <span class="skill-v">Selenium, Playwright <em>(developing proficiency)</em>, Apache JMeter, Postman, Newman</span>
         </div>
         <div class="skill-line">
-          <span class="skill-k">AI &amp; Machine Learning</span>
-          <span class="skill-v">Machine Learning, NLP, Transformers, Large Language Models (LLMs)</span>
+          <span class="skill-k">Programming &amp; Data</span>
+          <span class="skill-v">Python, Java, C, SQL, JavaScript</span>
         </div>
         <div class="skill-line">
           <span class="skill-k">Tools &amp; Platforms</span>
@@ -281,9 +365,13 @@
 
         <ul class="clean-list" style="margin-top: 1.25rem;">
           <li><strong>Attention in Transformers: Concepts and Code in PyTorch</strong> — DeepLearning.AI</li>
-          <li><strong>Specialize in QA Manual Testing with Live Project + Agile + Jira</strong> — Udemy</li>
-          <li><strong>Foundations in Digital Forensics with Magnet Axiom</strong> — Contessa Solutions and Consultants Ltd.</li>
+          <li><strong>Ongoing Self-Directed Study</strong> — Large Language Models, Transformers, Agentic AI, and AI-driven Software Testing</li>
         </ul>
+
+        <p class="cred-footnote">
+          Additional web technologies and industry certifications (Agile/Jira QA Manual Testing,
+          Digital Forensics) are included in my full <a class="text-link" href="cv.html">Curriculum Vitae</a>.
+        </p>
       </section>
     </main>
   </div>
